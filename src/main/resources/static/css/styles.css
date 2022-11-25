@@ -10,6 +10,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
 :root {
   --bs-darky: #212529;
   --bs-blue: #0d6efd;
@@ -11788,6 +11789,27 @@ ul.slider li img{
   background: linear-gradient(-137deg,#00C6FB 0%,#005BEA 100%);
   -webkit-background-clip: text;
   color: transparent;  
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.container .btn-float{
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 0px 0px;
+  color: white;
+  border-radius: 30px;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  transition: all 0.3s ease 0s;
+  box-shadow: 1px 0.1px 0px rgba(255, 255, 255, 0.3);
 }
 
 /*--------------------------------------------------------------

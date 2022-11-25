@@ -2,6 +2,7 @@
 <html lang="es">
     <head th:replace = "layout/fragmentos :: cabecera"> </head>
     <body class="d-flex flex-column">
+        <div th:replace = "layout/fragmentos :: musica"> </div>
         <main class="flex-shrink-0">
             <nav th:replace = "layout/fragmentos :: barra"> </nav>
             <!-- Begin Hero Section -->
@@ -133,6 +134,7 @@
                 </div>
             </div>-->
         </section>
+        
         <footer th:replace = "layout/fragmentos :: piepagina"> </footer>
         <div th:replace = "layout/fragmentos :: librerias"> </div>
     </body>
