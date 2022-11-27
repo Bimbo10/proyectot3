@@ -20,7 +20,7 @@
         <!-- START HEADER-->
         <header class="header" th:fragment="barrasuperior">
             <div class="page-brand">
-                <a class="link" href="panel.html">
+                <a class="link" th:href="@{/panel}">
                     <span class="brand">Centro
                         <span class="brand-tip">Admin</span>
                     </span>
@@ -46,7 +46,10 @@
                             <a class="dropdown-item" href="profile.html"><i class="fa fa-cog"></i>Configuración</a>
                             <a class="dropdown-item" href="javascript:;"><i class="fa fa-support"></i>Soporte</a>
                             <li class="dropdown-divider"></li>
-                            <a class="dropdown-item" th:href="@{/login/}"><i class="fa fa-power-off"></i>Salir</a>
+                            <!--<a class="dropdown-item" th:href="@{/login/}"><i class="fa fa-power-off"></i>Salir</a>-->
+                            <form th:action="@{/logout}" method="post">
+                                <button type="submit" class="dropdown-item">Salir</button>
+                            </form>
                         </ul>
                     </li>
                 </ul>
